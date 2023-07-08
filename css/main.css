@@ -1,0 +1,45 @@
+html{
+    font-size: 62%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url(../images/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 8rem;
+}
+nav ul{
+    list-style: none;
+}
+nav ul a{
+    color: white;
+    float: right;
+    padding: 2.5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar li a:hover {
+    background-color: rgb(78, 6, 6);
+    height: 1rem;
+    
+}
+.banner{
+    background-image: url(../images/Image\ 5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    opacity: 0.7;
+    padding: 20px 0;
+}
+h1{
+    padding-top: 8rem;
+    padding-left: 10rem;
+    font-style: italic;
+    font-weight: bolder;
+    color: #F9FE82;
+    font-size: 4rem;
+}
