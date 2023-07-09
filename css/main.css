@@ -117,3 +117,62 @@ img{
     padding-top: 5rem;
     padding-left: 3rem;
 }
+
+ /*Media queries for mobile and tablets */
+
+@media only screen and (max-width: 768px) {
+  /* Adjust header height for smaller screens */
+  header {
+    height: 6rem;
+  }
+  
+  /* Decrease font size and padding for navigation links */
+  nav ul a {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  /* Adjust padding and font size for h1 */
+  h1 {
+    padding-top: 6rem;
+    padding-left: 5rem;
+    font-size: 3rem;
+  }
+  
+  /* Adjust font size for h2 */
+  h2 {
+    font-size: 2rem;
+  }
+  
+  /* Adjust height and font size for banner */
+  .banner {
+    height: 25rem;
+    padding: 10px 0;
+  }
+  
+  /* Adjust height and font size for images */
+  img {
+    height: 20rem;
+  }
+  
+  /* Adjust margin and font size for description */
+  .description {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+ }
+ .container{
+    grid-template-columns: 1fr;
+ }
+ .item{
+    text-align: center;
+ }
+ .item img{
+    height: auto;
+    max-width: 100%;
+ }
+ .description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+ }
+
+}
