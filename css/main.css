@@ -27,6 +27,11 @@ nav ul a{
     height: 1rem;
     
 }
+.main-container{
+    max-width: 100%;
+    margin: 0 auto;
+    background-color:#FFF6E9;
+}
 .banner{
     background-image: url(../images/Image\ 5.jpg);
     background-size: cover;
@@ -42,4 +47,54 @@ h1{
     font-weight: bolder;
     color: #F9FE82;
     font-size: 4.5rem;
+}
+h2{
+    text-align: center;
+    padding-top: 1.5em;
+    font-size: 3.5rem;
+    color: #550643;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:20px;
+    
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+    height: 40rem;
+    
+
+}
+.description{
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-style: italic;
+    font-weight: bold;
+    color: #550643;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    
+    
+}
+
+.btn:hover,
+.btn:focus{
+    background-color:#550643;
+    color: inherit;
 }
