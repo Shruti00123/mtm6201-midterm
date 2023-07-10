@@ -177,6 +177,7 @@ img:hover{
     padding-left: 3rem;
 }
 
+
  /*Media queries for mobile and tablets */
 
 @media only screen and (max-width: 768px) {
@@ -235,3 +236,50 @@ img:hover{
  }
 
 }
+/*contact page styles*/
+.contact{
+    color: black;
+}
+
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #550643;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+  }
+  
+  input[type="submit"] {
+    background-color:#ECB0B0;
+    color: black;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color:#550643;
+    color:white;
+  }
+  
