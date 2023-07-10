@@ -11,6 +11,7 @@ header {
     background-position: center;
     height: 8rem;
 }
+
 nav ul{
     list-style: none;
 }
@@ -40,6 +41,9 @@ nav ul a{
     opacity: 0.7;
     padding: 20px 0;
 }
+.banner:hover{
+    opacity: 5;
+}
 h1{
     padding-top: 8rem;
     padding-left: 10rem;
@@ -48,17 +52,55 @@ h1{
     color: #F9FE82;
     font-size: 4.5rem;
 }
+h1{
+    opacity: 0;
+    animation: fade-in-left 2s forwards;
+}
+@keyframes fade-in-left{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 h2{
     text-align: center;
     padding-top: 1.5em;
     font-size: 3.5rem;
     color: #550643;
 }
+h2{
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap:20px;
     
+}
+.container{
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .item{
     display: flex;
@@ -70,8 +112,10 @@ img{
     max-width: 100%;
     object-fit: cover;
     height: 40rem;
-    
-
+    transition: transform 0.3s;
+}
+img:hover{
+    transform: scale(0.8);
 }
 .description{
     margin-top: 1rem;
@@ -88,7 +132,22 @@ img{
     justify-content: center;
     align-items: center;
     padding-bottom: 5rem;
+    animation: zoom-in 1s infinite;
 }
+@keyframes zoom-in{
+    0%{
+        transform: scale(1);
+
+    }
+    50%{
+        transform: scale(1.2);
+
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 .btn{
     padding: 10px 20px;
     background-color: #ECB0B0;
