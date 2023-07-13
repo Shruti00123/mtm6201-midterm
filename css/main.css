@@ -356,7 +356,7 @@ img:hover{
 img:hover{
     transform: scale(0.8);
 }
-.description{
+.about-description{
     max-width: 50%;
     margin-top: 1rem;
     font-size: 2.5rem;
@@ -413,7 +413,7 @@ img:hover{
     padding-left: 80px;
     
 }
-.description{
+.about-description{
     max-width: 100%;
     font-size: 1.8rem;
 }
