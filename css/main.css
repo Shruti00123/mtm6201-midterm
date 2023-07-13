@@ -409,6 +409,7 @@ img:hover{
 .about-item img{
     width: 70%;
     max-width: 100%;
+    height: fit-content;
     padding-left: 80px;
     
 }
