@@ -396,3 +396,29 @@ img:hover{
   background-color: #550643;
   color: white;
 }
+@media only screen and (max-width: 768px){
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.about-item{
+    display: initial;
+}
+.about-item img{
+    width: 70%;
+    max-width: 100%;
+    padding-left: 80px;
+    
+}
+.description{
+    max-width: 100%;
+    font-size: 1.8rem;
+}
+.button-container{
+    flex-direction: column;
+    align-items: center;
+}
+    
+}
