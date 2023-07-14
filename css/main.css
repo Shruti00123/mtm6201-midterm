@@ -293,8 +293,8 @@ img:hover {
     .skip-link {
         position: absolute;
         left: 1%;
-        padding: 8px 2px;
-        font-size: 1.5rem;
+        padding: 2px;
+        font-size: 1rem;
         background-color: #653b03;
         color: #fff;
         text-decoration: none;
