@@ -9,9 +9,12 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="navbar">
+    <!--Skip link for accessibility-->
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header role="banner">
+        <nav role="navigation" id="nav-skip">
+            <ul class="navbar" role="list">
+                <!--Navigation menu-->
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="index.html">HOME</a></li>
@@ -20,78 +23,88 @@
     </header>
     <div class="main-container">
         <div class="banner">
-            <h1>TREAT YOUR <br>TEMPERAMENTS</h1>
+            <!--Heading in the banner image-->
+            <h1 role="heading">TREAT YOUR <br>TEMPERAMENTS</h1>
         </div>
-        <div>
-            <h2>OUR PRODUCTS FOR YOUR EVERY OCCASION!</h2>
-        </div>
-        <div class="container">
-            <div class="item">
-               <img src="images/image1-900.jpg"
-                    srcset="images/image1-600.jpg 640w,
-                            images/image1-900.jpg 900w,
-                            images/image1-1200.jpg 1200w"
-                    
-                    sizes="(max-width: 900px) 640px,
-                           (max-width: 1200px) 900px,1200px"
+        <main role="main" id="maincontent">
+            <section role="region">
+                <div>
+                    <!--section heading-->
+                    <h2 role="heading">OUR PRODUCTS FOR YOUR EVERY OCCASION!</h2>
+                </div>
+                <div class="container">
+                    <div class="item" itemscope itemtype="https://schema.org/Bakery">
+                        <img src="images/image1-900.jpg" srcset="images/image1-600.jpg 640w,
+                                     images/image1-900.jpg 900w,
+                                     images/image1-1200.jpg 1200w" sizes="(max-width: 900px) 640px,
+                                    (max-width: 1200px) 900px,1200px" alt="Cake for anniversary party"
+                            itemprop="image">
 
-                            alt="image1">
-                
-                            <div class="description">Whether it is someone's anniversary party or office party, we have every kind of cake for every different occassion because one cake does not fit all.</div>            
+                        <!--description of the product-->
+                        <div class="description">Whether it is someone's anniversary party or office party, we have
+                            every
+                            kind of cake for every different occassion because one cake does not fit all.</div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/image2-900.jpg" srcset="images/image2-600.jpg 640w,
+                                     images/image2-900.jpg 900w,
+                                     images/image2-1200.jpg 1200w" sizes="(max-width: 900px) 640px,
+                                    (max-width: 1200px) 900px,1200px" alt="cake for child">
+
+                        <div class="description">Whether it is your child's first birthday or 5th birthday, we know what
+                            they want because on every birthday, a child's tastes and mind both are growing and their
+                            taste
+                            will not remain same. We have products as per the age groups.</div>
+                    </div>
+                    <div class="item">
+                        <img src="images/image3-900.jpg" srcset="images/image3-600.jpg 640w,
+                                     images/image3-900.jpg 900w,
+                                     images/image3-1200.jpg 1200w" sizes="(max-width: 900px) 640px,
+                                    (max-width: 1200px) 900px,1200px" alt="Cake for girl gang party or boys party">
+
+                        <div class="description">Whether it is a girl gang party or boys party, we have every kind of
+                            color
+                            and taste that you will fall in love with. For every baby shower, we have some yummy and
+                            special
+                            gifts for you. Don't miss this chance to enjoy some amazing food.</div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/image4-900.jpg" srcset="images/image4-600.jpg 640w,
+                                     images/image4-900.jpg 900w,
+                                     images/image4-1200.jpg 1200w" sizes="(max-width: 900px) 640px,
+                                    (max-width: 1200px) 900px,1200px" alt="Cake for christmas party">
+
+                        <div class="description">Whether it is a christmas night or new year night, let's celebrate
+                            together
+                            and make some amazing memories with our friends and families and enjoy some freshly baked
+                            and
+                            delicious items.</div>
+                    </div>
+
+                </div>
+            </section>
+            <!--button to order-->
+            <div class="button">
+                <button class="btn">ORDER NOW</button>
             </div>
-            <div class="item">
-                <img src="images/image2-900.jpg"
-                     srcset="images/image2-600.jpg 640w,
-                             images/image2-900.jpg 900w,
-                             images/image2-1200.jpg 1200w"
-                     
-                     sizes="(max-width: 900px) 640px,
-                            (max-width: 1200px) 900px,1200px"
-                             
-                            alt="image2">
-                 
-                            <div class="description">Whether it is your child's first birthday or 5th birthday, we know what they want because on every birthday, a child's tastes and mind both are growing and their taste will not remain same. We have products as per the age groups.</div>            
-             </div>
-             <div class="item">
-                <img src="images/image3-900.jpg"
-                     srcset="images/image3-600.jpg 640w,
-                             images/image3-900.jpg 900w,
-                             images/image3-1200.jpg 1200w"
-                             
-                    sizes="(max-width: 900px) 640px,
-                           (max-width: 1200px) 900px,1200px"
-                             
-                           alt="image3">
-                 
-                           <div class="description">Whether it is a girl gang party or boys party, we have every kind of color and taste that you will fall in love with. For every baby shower, we have some yummy and special gifts for you. Don't miss this chance to enjoy some amazing food.</div>            
-             </div>
-             <div class="item">
-                <img src="images/image4-900.jpg"
-                     srcset="images/image4-600.jpg 640w,
-                             images/image4-900.jpg 900w,
-                             images/image4-1200.jpg 1200w"
-                     
-                     sizes="(max-width: 900px) 640px,
-                            (max-width: 1200px) 900px,1200px"
-                             
-                            alt="image4">
-                 
-                            <div class="description">Whether it is a christmas night or new year night, let's celebrate together and make some amazing memories with our friends and families and enjoy some freshly baked and delicious items.</div>            
-             </div>
-        </div>
-        <div class="button">
-            <button class="btn">ORDER NOW</button>
-        </div>
-        <footer class="site-footer">
+            <!--skip link to go back to top-->
+            <a href="#nav-skip" class="skip-link">Go back to top</a>
+        </main>
+        <footer class="site-footer" role="contentinfo">
             <div class="footer">
-            Copyright &copy; Creamy Delights
+                <!--footer content-->
+                Copyright &copy; Creamy Delights
             </div>
         </footer>
 
-     
+
+
 
 
     </div>
+
 </body>
 
 </html>

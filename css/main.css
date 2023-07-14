@@ -1,21 +1,25 @@
-html{
+/* set the base font size for the HTML element*/
+html { 
     font-size: 62%;
 }
+/* Reset the margin and padding for the body element */
 body {
     margin: 0;
     padding: 0;
 }
+/* styles for the header element */
 header {
     background-image: url(../images/image1.jpg);
     background-size: cover;
     background-position: center;
     height: 8rem;
 }
-
-nav ul{
+/* styles for the navigation menu */
+nav ul {
     list-style: none;
 }
-nav ul a{
+
+nav ul a {
     color: white;
     float: right;
     padding: 2.5rem;
@@ -23,17 +27,20 @@ nav ul a{
     font-size: 2rem;
     font-weight: bold;
 }
+/* styles for navigation menu on hover */
 .navbar li a:hover {
     background-color: rgb(78, 6, 6);
     height: 1rem;
-    
+
 }
+/* styles for the main container */
 .main-container {
     max-width: 100%;
     margin: 0 auto;
-    background-color:#FFF6E9;
+    background-color: #FFF6E9;
 }
-.banner{
+/* Styles for the banner */
+.banner {
     background-image: url(../images/Image\ 5.jpg);
     background-size: cover;
     background-position: center;
@@ -41,10 +48,12 @@ nav ul a{
     opacity: 0.7;
     padding: 20px 0;
 }
-.banner:hover{
+/* style for the banner on hover */
+.banner:hover {
     opacity: 5;
 }
-h1{
+/* styles for h1 */
+h1 {
     padding-top: 8rem;
     padding-left: 10rem;
     font-style: italic;
@@ -52,72 +61,87 @@ h1{
     color: #F9FE82;
     font-size: 4.5rem;
 }
-h1{
+
+h1 {
     opacity: 0;
     animation: fade-in-left 2s forwards;
 }
-@keyframes fade-in-left{
-    0%{
+/* Animation styles */
+@keyframes fade-in-left {
+    0% {
         opacity: 0;
         transform: translateX(-100%);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
-h2{
+/* styles for h2 */
+h2 {
     text-align: center;
     padding-top: 1.5em;
     font-size: 3.5rem;
     color: #550643;
 }
-h2{
+
+h2 {
     opacity: 0;
     animation: fade-in 2s forwards;
 }
-@keyframes fade-in{
-    0%{
+/* animation styles for fade-in */
+@keyframes fade-in {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-.container{
+/* styles for the container */
+.container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap:20px;
-    
+    grid-gap: 20px;
+
 }
-.container{
+
+.container {
     opacity: 0;
     animation: fade-in 2s forwards;
 }
-@keyframes fade-in{
-    0%{
+/* animation styles for fade-in */
+@keyframes fade-in {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-.item{
+
+.item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-img{
+/* Styles for images */
+img {
     max-width: 100%;
     object-fit: cover;
     height: 40rem;
     transition: transform 0.3s;
 }
-img:hover{
+/* styles for images on hover */
+img:hover {
     transform: scale(0.8);
 }
-.description{
+
+.description {
     margin-top: 1rem;
     font-size: 2rem;
     margin-bottom: 20px;
@@ -127,31 +151,36 @@ img:hover{
     font-weight: bold;
     color: #550643;
 }
-.button{
+/* styles for button */
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 5rem;
     animation: zoom-in 1s infinite;
 }
-@keyframes zoom-in{
-    0%{
+/* animation styles */
+@keyframes zoom-in {
+    0% {
         transform: scale(1);
 
     }
-    50%{
+
+    50% {
         transform: scale(1.2);
 
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
-
-.btn{
+/* styles for button */
+.btn {
     padding: 10px 20px;
     background-color: #ECB0B0;
     border: none;
+    color: black;
     border-radius: 4px;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
@@ -159,88 +188,126 @@ img:hover{
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
-.btn:hover{
-    background-color:rgb(78, 6, 6);
+/* styles for button on hover */
+.btn :hover {
+    background-color: rgb(78, 6, 6);
     color: white;
 }
-.site-footer{
+
+.btn a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* styles for footer */
+.site-footer {
     background-image: url(../images/image1.jpg);
     height: 8rem;
     background-size: cover;
-    background-position: cover;
     color: white;
     font-size: 17px;
-    
+
 }
-.footer{
+
+.footer {
     padding-top: 5rem;
     padding-left: 3rem;
 }
+/* styles for skip link */
+.skip-link {
+    position: absolute;
+    left: 48%;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: #653b03;
+    color: #fff;
+    text-decoration: none;
+}
 
-
- /*Media queries for mobile and tablets */
+/*Media queries for mobile and tablets */
 
 @media only screen and (max-width: 768px) {
-  /* Adjust header height for smaller screens */
-  header {
-    height: 6rem;
-  }
-  
-  /* Decrease font size and padding for navigation links */
-  nav ul a {
-    font-size: 1.5rem;
-    padding: 1.5rem;
-  }
-  
-  /* Adjust padding and font size for h1 */
-  h1 {
-    padding-top: 6rem;
-    padding-left: 5rem;
-    font-size: 3rem;
-  }
-  
-  /* Adjust font size for h2 */
-  h2 {
-    font-size: 2rem;
-  }
-  
-  /* Adjust height and font size for banner */
-  .banner {
-    height: 25rem;
-    padding: 10px 0;
-  }
-  
-  /* Adjust height and font size for images */
-  img {
-    height: 20rem;
-  }
-  
-  /* Adjust margin and font size for description */
-  .description {
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
- }
- .container{
-    grid-template-columns: 1fr;
- }
- .item{
-    text-align: center;
- }
- .item img{
-    height: auto;
-    max-width: 100%;
- }
- .description{
-    margin-top: 1rem;
-    font-size: 1.5rem;
- }
+
+    /* Adjust header height for smaller screens */
+    header {
+        height: 6rem;
+    }
+
+    /* Decrease font size and padding for navigation links */
+    nav ul a {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    /* Adjust padding and font size for h1 */
+    h1 {
+        padding-top: 6rem;
+        padding-left: 5rem;
+        font-size: 3rem;
+    }
+
+    /* Adjust font size for h2 */
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Adjust height and font size for banner */
+    .banner {
+        height: 25rem;
+        padding: 10px 0;
+    }
+
+    /* Adjust height and font size for images */
+    img {
+        height: 20rem;
+    }
+
+    /* Adjust margin and font size for description */
+    .description {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+    /* adjust container layout */
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        text-align: center;
+    }
+    /* adjust image for smaller screens */
+
+    .item img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .description {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    /* adjust styles for skip link */
+
+    .skip-link {
+        position: absolute;
+        left: 1%;
+        padding: 8px;
+        font-size: 1.5rem;
+        background-color: #653b03;
+        color: #fff;
+        text-decoration: none;
+    }
 
 }
+
 /*contact page styles*/
-.contact{
+.contact {
     color: white;
 }
-.contact-banner{
+/* styles for contact banner */
+.contact-banner {
     background-image: url(../images/contact\ banner.jpg);
     background-size: cover;
     background-position: center;
@@ -248,87 +315,92 @@ img:hover{
     opacity: 0.7;
     padding: 20px 0;
 }
-.contact-banner:hover{
+
+.contact-banner:hover {
     opacity: 5;
 }
-
-  form {
+/* styles for contact form */
+form {
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  label {
+}
+
+label {
     display: inline-block;
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
     color: #550643;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
     padding: 20px;
     border: 2px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 10px;
-    
-  }
-  
-  input[type="submit"] {
-    background-color:#ECB0B0;
+
+}
+
+input[type="submit"] {
+    background-color: #ECB0B0;
     color: black;
     font-size: 18px;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color:#550643;
-    color:white;
-  }
-  .contact-footer{
+}
+
+input[type="submit"]:hover {
+    background-color: #550643;
+    color: white;
+}
+/* styles for footer */
+.contact-footer {
     background-image: url(../images/image1.jpg);
     height: 8rem;
     background-size: cover;
-    background-position: cover;
     color: white;
     font-size: 17px;
-    
-  }
-  .footer{
+
+}
+
+.footer {
     padding-top: 5rem;
     padding-left: 3rem;
 }
 
-  /* media query for contact page*/
-  @media screen and (max-width: 768px){
-    form{
+/* media query for contact page*/
+@media screen and (max-width: 768px) {
+    form {
         width: 80%;
         margin: 0 auto;
-        
+
     }
+
     input[type="text"],
     input[type="email"],
-    textarea{
-        padding:15px;
+    textarea {
+        padding: 15px;
     }
-    input[type="submit"]{
+
+    input[type="submit"] {
         font-size: 16px;
         padding: 8px 16px;
     }
- 
+
 
 }
 
 /* About page styles */
-.about-banner{
+/* styles for about page banner */
+.about-banner {
     background-image: url(../images/about\ banner.jpg);
     background-size: cover;
     background-position: center;
@@ -336,30 +408,36 @@ img:hover{
     opacity: 0.7;
     padding: 20px 0;
 }
-.about-banner:hover{
+/* styles for about banner on hover */
+.about-banner:hover {
     opacity: 5;
 }
- .about-container{
+
+.about-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
- }
- .about-item{
+}
+
+.about-item {
     display: flex;
     justify-content: center;
 }
-.about-item img{
+/* styles for about images */
+.about-item img {
     max-width: 50%;
     transition: transform 0.3s;
-    
+
 }
-img:hover{
+
+img:hover {
     transform: scale(0.8);
 }
-.about-description{
+
+.about-description {
     max-width: 50%;
     margin-top: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     margin-left: 5px;
     margin-right: 5px;
@@ -367,59 +445,67 @@ img:hover{
     font-weight: bold;
     color: #550643;
     padding-left: 20px;
-    
+
 }
-.button-container{
+/* styles for button */
+.button-container {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
 }
-.contact-button{
-  background-color: #ECB0B0;
-  color: black;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  
-}
-.button-link {
-  display: inline-block; 
-  text-decoration: none; 
-  color:black;
-  padding: 10px 20px;
+
+.contact-button {
+    background-color: #ECB0B0;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
 }
 
+.button-link {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+/* styles for button on hover */
 .button-link:hover {
-  background-color: #550643;
-  color: white;
+    background-color: #550643;
+    color: white;
 }
-@media only screen and (max-width: 768px){
-.about-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-}
-.about-item{
-    display: initial;
-}
-.about-item img{
-    width: 70%;
-    max-width: 100%;
-    height: fit-content;
-    padding-left: 80px;
-    
-}
-.about-description{
-    max-width: 100%;
-    font-size: 1.8rem;
-}
-.button-container{
-    flex-direction: column;
-    align-items: center;
-}
-    
+
+@media only screen and (max-width: 768px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .about-item {
+        display: initial;
+    }
+
+    .about-item img {
+        width: 70%;
+        max-width: 100%;
+        height: fit-content;
+        padding-left: 80px;
+
+    }
+
+    .about-description {
+        max-width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
