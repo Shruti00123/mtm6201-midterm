@@ -399,6 +399,7 @@ input[type="submit"]:hover {
 }
 
 /* About page styles */
+
 /* styles for about page banner */
 .about-banner {
     background-image: url(../images/about\ banner.jpg);
@@ -477,7 +478,7 @@ img:hover {
     background-color: #550643;
     color: white;
 }
-
+/* Media query for about page smaller creen sizes */
 @media only screen and (max-width: 768px) {
 
     .about-item {
