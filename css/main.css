@@ -490,6 +490,7 @@ img:hover {
 
     .about-item img {
         width: 100%;
+        max-width: 90%;
     }
 
     .about-description {
